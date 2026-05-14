@@ -1,0 +1,27 @@
+{
+    "name": "restful",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/jaumrosa/projeto-nodeJS#readme",
+    "bugs": {
+        "url": "https://github.com/jaumrosa/projeto-nodeJS/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jaumrosa/projeto-nodeJS.git"
+    },
+    "license": "ISC",
+    "author": "João Pedro Rosa",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@seald-io/nedb": "^4.1.2",
+        "body-parser": "^2.2.2",
+        "consign": "^0.1.6",
+        "express": "^5.2.1",
+        "express-validator": "^5.3.1"
+    }
+}
