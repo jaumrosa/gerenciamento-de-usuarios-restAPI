@@ -21,7 +21,7 @@ class HttpRequest {
             const ajax = new XMLHttpRequest();
             ajax.open(method.toUpperCase(), url);
             ajax.onerror = event => {
-                reject(e);
+                reject(event);
             }
             ajax.onload = event => {
                 let obj = {}
@@ -33,7 +33,8 @@ class HttpRequest {
                 }
                 resolve(obj);
         }
-        ajax.send();
+        ajax.setRequestHeader('Content-Type', 'application/json');
+        ajax.send(JSON.stringify(params));
 
         })
         
