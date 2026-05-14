@@ -98,7 +98,6 @@ class UserController{
     }
 
     selectAll(){
-        
         HttpRequest.get('/users').then(data =>{
             data.users.forEach(dataUser => {
                 let user = new User();
